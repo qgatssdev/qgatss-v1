@@ -1,0 +1,31 @@
+.desktop_header_container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2%;
+
+  p {
+    color: #ffffff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: 'JetBrains Mono';
+  }
+
+  .desktop_header_links {
+    ul {
+      display: flex;
+      gap: 50px;
+      list-style: none;
+
+      li {
+        color: #FFF;
+        font-family: JetBrains Mono;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+  }
+}
