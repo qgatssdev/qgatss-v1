@@ -1,0 +1,44 @@
+.about_container {
+  margin-top: 60px;
+  position: relative;
+  padding-bottom: 40px;
+
+  .about_icon_filled {
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+  }
+
+  .about_icon_outlined {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  }
+
+  h1 {
+    text-align: center;
+    color: #ccf381;
+    font-family: Coolvetica;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  .about_text_container {
+    gap: 30px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      max-width: 587px;
+      color: #d6d6d6;
+      font-family: JetBrains Mono;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      margin: 0 auto;
+    }
+  }
+}

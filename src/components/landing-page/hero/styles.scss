@@ -6,17 +6,28 @@
 
 .hero_container {
   margin-top: 4%;
+  position: relative;
+  margin-left: 10%;
+  height: 90vh;
 
   .hero_container_one {
     display: flex;
     gap: 60px;
     align-items: baseline;
-    margin-left: 10%;
+    position: relative;
 
     .text {
-      font-size: 300px;
+      font-size: 200px;
       color: #ccf381;
       font-family: 'Coolvetica';
+
+      @media (min-width: 1200px) {
+        font-size: 250px;
+      }
+
+      @media (min-width: 1500px) {
+        font-size: 300px;
+      }
     }
 
     .intro {
@@ -26,18 +37,52 @@
       font-weight: 700;
       font-family: JetBrains Mono;
     }
+
+    .icon_filled {
+      position: absolute;
+      right: 15%;
+      top: 20%;
+    }
   }
 
   .hero_container_two {
-    margin-left: 40%;
+    margin-left: 33%;
+    margin-top: -80px;
+    position: relative;
 
     p {
-      font-size: 300px;
+      font-size: 200px;
       color: #ccf381;
-      font-family: 'Coolvetica';
+      font-family: Coolvetica;
       color: rgba(0, 0, 0, 0.5);
       -webkit-text-stroke: 1px white;
       -webkit-text-fill-color: transparent;
+
+      @media (min-width: 1200px) {
+        font-size: 250px;
+      }
+
+      @media (min-width: 1500px) {
+        font-size: 300px;
+      }
     }
+
+    .icon_outlined {
+      position: absolute;
+      left: -60%;
+      top: 40%;
+    }
+  }
+
+  .hero_scrolldown {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    color: #d6d6d6;
+    font-family: JetBrains Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 }
