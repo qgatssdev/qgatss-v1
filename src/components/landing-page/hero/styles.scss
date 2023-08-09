@@ -1,8 +1,43 @@
+@font-face {
+  font-family: 'Coolvetica';
+  src: local('Coolvetica'),
+    url('../../../fonts/coolvetica\ condensed\ rg.ttf') format('truetype');
+}
+
 .hero_container {
-  height: 100vh;
-  background: url('../../../assets/noiseKL.png');
-  background-size: cover;
-  background-color: #000000;
-  background-repeat: no-repeat;
-  mix-blend-mode: overlay;
+  margin-top: 4%;
+
+  .hero_container_one {
+    display: flex;
+    gap: 60px;
+    align-items: baseline;
+    margin-left: 10%;
+
+    .text {
+      font-size: 300px;
+      color: #ccf381;
+      font-family: 'Coolvetica';
+    }
+
+    .intro {
+      color: #ccf381;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      font-family: JetBrains Mono;
+    }
+  }
+
+  .hero_container_two {
+    margin-left: 40%;
+
+    p {
+      font-size: 300px;
+      color: #ccf381;
+      font-family: 'Coolvetica';
+      color: rgba(0, 0, 0, 0.5);
+      -webkit-text-stroke: 1px white;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
