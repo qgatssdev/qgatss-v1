@@ -3,7 +3,15 @@ import './styles.scss';
 const About = () => {
   return (
     <div className='about_container'>
-      <h1>ABOUT</h1>
+      <h1>
+        ABOUT
+        <img
+          src={require('../../../assets/Ellipse 6.svg').default}
+          alt='eclipse'
+          className='eclipse_one'
+        />
+      </h1>
+
       <img
         src={require('../../../assets/iconfilled.svg').default}
         alt='green icon'
