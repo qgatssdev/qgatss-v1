@@ -1,0 +1,15 @@
+.mobile_header_container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2%;
+
+  p {
+    color: #fff;
+    font-family: JetBrains Mono;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+  }
+}
