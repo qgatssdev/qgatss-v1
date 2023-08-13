@@ -12,6 +12,11 @@ const DesktopHeader = () => {
           <li>Resume</li>
         </ul>
       </div>
+      <img
+        src={require('../../../assets/Ellipse 4.svg').default}
+        alt='eclipse'
+        className='desktop_eclipse'
+      />
     </div>
   );
 };

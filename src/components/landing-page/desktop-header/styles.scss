@@ -4,6 +4,13 @@
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 2%;
+  position: relative;
+
+  .desktop_eclipse {
+    position: absolute;
+    top: 0;
+    right: 15%;
+  }
 
   p {
     color: #ffffff;
@@ -20,7 +27,7 @@
       list-style: none;
 
       li {
-        color: #FFF;
+        color: #fff;
         font-family: JetBrains Mono;
         font-size: 16px;
         font-style: normal;
