@@ -1,0 +1,56 @@
+.project_container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  p {
+    color: #ccf381;
+    font-family: Coolvetica;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 900;
+    text-align: center;
+    word-wrap: break-word;
+
+    @media (max-width: 576px) {
+      font-size: 100px;
+      line-height: 88%;
+    }
+  }
+
+  .project_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    justify-items: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 448px;
+      max-height: 291px;
+      padding: 0 10px 0 10px;
+    }
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  button {
+    width: 224px;
+    height: 80px;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+
+    &:hover {
+      background: #ccf381;
+      border-radius: 10px;
+    }
+  }
+}
