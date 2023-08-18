@@ -2,6 +2,7 @@ import MediaQuery from 'react-responsive';
 import DesktopHeader from '../desktop-header';
 import MobileHeader from '../mobile-header';
 import './styles.scss';
+//
 
 const Header = () => {
   return (
