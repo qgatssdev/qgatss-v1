@@ -30,22 +30,28 @@
   }
 
   h1 {
-    text-align: center;
-    color: #ccf381;
-    font-family: Coolvetica;
-    font-size: 140px;
-    font-style: normal;
-    font-weight: 900;
     position: relative;
+    text-align: center;
 
-    @media (max-width: 992px) {
-      font-size: 100px;
+    span {
+      color: #ccf381;
+      font-family: Coolvetica;
+      font-size: 140px;
+      font-style: normal;
+      font-weight: 500;
+      cursor: pointer;
+      z-index: 1;
+
+      @media (max-width: 992px) {
+        font-size: 100px;
+      }
     }
 
     .eclipse_one {
       position: absolute;
       top: -190%;
       right: 23%;
+      z-index: -1;
     }
   }
 

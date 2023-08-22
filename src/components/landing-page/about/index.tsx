@@ -1,10 +1,33 @@
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
 import './styles.scss';
+import { onGreen, onTransparent } from 'animations/general';
 
 const About = () => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      const tl = gsap.timeline({ repeat: -1 });
+
+      tl.to('.about_icon_filled', {
+        rotation: '+=360',
+        repeat: -1,
+        duration: 4,
+        ease: 'none',
+        transformOrigin: '50% 50%',
+      });
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div className='about_container'>
+    <div className='about_container' ref={containerRef}>
       <h1>
-        ABOUT
+        <span onMouseEnter={onTransparent} onMouseLeave={onGreen}>
+          ABOUT
+        </span>
         <img
           src={require('../../../assets/Ellipse 6.svg').default}
           alt='eclipse'
@@ -24,24 +47,24 @@ const About = () => {
       />
       <div className='about_text_container'>
         <p>
-          Hey! 👋 I'm [Your Name], a passionate front-end developer with [X]
-          years of experience. I thrive on bringing designs to life through
-          clean and efficient code,using my expertise in HTML, CSS, JavaScript,
-          and responsive design. Collaborating closely with clients and
-          designers, I aim to create intuitive and user-friendly interfaces that
-          leave a lasting impact. Let's embark on an exciting journey together
-          and build captivating websites that elevate your digital presence!
+          Hey!👋 I'm Uche, and I'm on a mission to craft exceptional digital
+          experiences as a passionate software engineer with a over 2 years of
+          experience. My expertise revolves around taking design concepts and
+          turning them into functional, user-friendly realities. Collaboration
+          is at the heart of my process. I work closely with clients and
+          designers to ensure that every pixel aligns perfectly with the vision.
+          It's not just about code, it's about creating a lasting impact through
+          intuitive interfaces that users love.
         </p>
         <p>
-          When it comes to web development, continuous learning is my mantra. I
-          stay at the forefront of the industry by embracing emerging trends and
-          best practices, always seeking ways to optimize website performance
-          and deliver cutting-edge solutions. Beyond coding, I have a love for
-          nature and photography, often exploring new hiking trails and
-          capturing beautiful moments through my lens. I'm passionate about
-          combining creativity with technology to create exceptional digital
-          experiences. Reach out, and let's turn your ideas into remarkable
-          realities!
+          When I step away from the screen, you'll often find me immersed in
+          music or hitting the gym. The rhythm of coding matches the rhythm of
+          my favorite tunes, and just as I sculpt code, I also sculpt myself
+          through dedicated workouts. I'm a firm believer that creativity and
+          technology are an unbeatable combination. Through thoughtful coding
+          and innovative design, I'm on a journey to create seamless digital
+          experiences that resonate. So, if you're ready to transform your ideas
+          into remarkable realities, let's connect and make it happen.
         </p>
       </div>
     </div>
