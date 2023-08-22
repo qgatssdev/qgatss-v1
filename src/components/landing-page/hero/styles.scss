@@ -38,24 +38,26 @@
     }
 
     .text {
-      font-size: 100px;
-      color: #ccf381;
-      font-family: 'Coolvetica';
+      span {
+        font-size: 100px;
+        color: #ccf381;
+        font-family: 'Coolvetica';
 
-      @media (min-width: 600px) and (max-width: 768px) {
-        font-size: 150px;
-      }
+        @media (min-width: 600px) and (max-width: 768px) {
+          font-size: 150px;
+        }
 
-      @media (min-width: 768px) and (max-width: 992px) {
-        font-size: 200px;
-      }
+        @media (min-width: 768px) and (max-width: 992px) {
+          font-size: 200px;
+        }
 
-      @media (min-width: 992px) {
-        font-size: 250px;
-      }
+        @media (min-width: 992px) {
+          font-size: 250px;
+        }
 
-      @media (min-width: 1500px) {
-        font-size: 300px;
+        @media (min-width: 1500px) {
+          font-size: 300px;
+        }
       }
     }
 
@@ -138,28 +140,38 @@
     }
 
     p {
-      font-size: 100px;
-      color: #ccf381;
-      font-family: Coolvetica;
-      color: rgba(0, 0, 0, 0.5);
-      -webkit-text-stroke: 1px white;
-      -webkit-text-fill-color: transparent;
+      span {
+        padding: 0;
+        margin: 0;
+        font-size: 90px;
+        color: #ccf381;
+        font-family: Coolvetica;
+        color: rgba(0, 0, 0, 0.5);
+        -webkit-text-stroke: 1px white;
+        -webkit-text-fill-color: transparent;
+        width: fit-content;
+        padding: 0;
 
-      @media (min-width: 600px) and (max-width: 768px) {
-        font-size: 150px;
-      }
+        @media (min-width: 600px) and (max-width: 768px) {
+          font-size: 150px;
+        }
 
-      @media (min-width: 768px) and (max-width: 992px) {
-        font-size: 200px;
-      }
+        @media (min-width: 768px) and (max-width: 992px) {
+          font-size: 200px;
+        }
 
-      @media (min-width: 992px) {
-        font-size: 250px;
-      }
+        @media (min-width: 992px) {
+          font-size: 250px;
+        }
 
-      @media (min-width: 1500px) {
-        font-size: 300px;
+        @media (min-width: 1500px) {
+          font-size: 300px;
+        }
       }
+    }
+
+    .no-transition {
+      transition: none !important;
     }
 
     .icon_outlined {
