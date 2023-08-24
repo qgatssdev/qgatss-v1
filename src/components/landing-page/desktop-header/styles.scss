@@ -10,14 +10,18 @@
     position: absolute;
     top: 0;
     right: 15%;
+    z-index: -1;
   }
 
-  p {
+  li {
     color: #ffffff;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     font-family: JetBrains Mono;
+    list-style: none;
+    z-index: 1;
+    cursor: pointer;
   }
 
   .desktop_header_links {
@@ -25,6 +29,7 @@
       display: flex;
       gap: 50px;
       list-style: none;
+      z-index: 1;
 
       li {
         color: #fff;
@@ -32,6 +37,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
+        cursor: pointer;
       }
     }
   }

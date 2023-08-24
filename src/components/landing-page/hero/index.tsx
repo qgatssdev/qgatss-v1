@@ -10,12 +10,12 @@ const Hero = () => {
   useEffect(() => {
     let ctx = gsap.context(() => {
       function softwareText() {
-        const tl = gsap.timeline();
+        const tl = gsap.timeline({delay: 1});
 
         tl.fromTo(
           '.text',
           {
-            x: '-100%',
+            x: '-130%',
           },
           {
             x: 0,
