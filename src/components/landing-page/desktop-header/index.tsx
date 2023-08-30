@@ -72,11 +72,11 @@ const DesktopHeader = () => {
           <li ref={resumeRef}>Resume</li>
         </ul>
       </div>
-      <img
+      {/* <img
         src={require('../../../assets/Ellipse 4.svg').default}
         alt='eclipse'
         className='desktop_eclipse'
-      />
+      /> */}
     </div>
   );
 };
