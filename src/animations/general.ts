@@ -38,7 +38,7 @@ export const setHoverAnimation = (element: HTMLLIElement | null) => {
     const mouseY = e.clientY;
 
     const angle = Math.atan2(mouseY - centerY, mouseX - centerX);
-    const maxDistance = boundingBox.width / 2;
+    const maxDistance = boundingBox.width / 5;
     const newX = centerX + Math.cos(angle) * maxDistance;
     const newY = centerY + Math.sin(angle) * maxDistance;
 
