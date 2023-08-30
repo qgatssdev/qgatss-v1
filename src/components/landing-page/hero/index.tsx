@@ -1,6 +1,5 @@
 import gsap from 'gsap';
 import { useEffect, useRef } from 'react';
-import { IO } from 'animations/observe';
 import './styles.scss';
 import { onGreen, onTransparent } from 'animations/general';
 
@@ -10,7 +9,7 @@ const Hero = () => {
   useEffect(() => {
     let ctx = gsap.context(() => {
       function softwareText() {
-        const tl = gsap.timeline({delay: 1});
+        const tl = gsap.timeline({ delay: 1 });
 
         tl.fromTo(
           '.text',
@@ -47,16 +46,12 @@ const Hero = () => {
           transformStyle: 'preserve-3d',
         });
 
-        IO(document.querySelector('.intro')!, {
-          threshold: 1,
-        }).then(() => {
-          tl.to('.intro', {
-            opacity: 1,
-            yPercent: 0,
-            stagger: 0.02,
-            duration: 0.6,
-            ease: 'easeOut',
-          });
+        tl.to('.intro', {
+          opacity: 1,
+          yPercent: 0,
+          stagger: 0.02,
+          duration: 0.6,
+          ease: 'easeOut',
         });
 
         return tl;

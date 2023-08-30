@@ -52,6 +52,8 @@
       top: -190%;
       right: 23%;
       z-index: -1;
+      background-color: #141313;
+      // max-width: 500px;
     }
   }
 
@@ -64,10 +66,10 @@
     padding: 5%;
 
     p {
-      max-width: 587px;
+      max-width: 987px;
       color: #d6d6d6;
       font-family: JetBrains Mono;
-      font-size: 18px;
+      font-size: clamp(1.5rem, 5vw, 2rem);
       font-style: normal;
       font-weight: 300;
       margin: 0 auto;
