@@ -10,11 +10,11 @@ const Skills = () => {
         <span onMouseEnter={onTransparent} onMouseLeave={onGreen}>
           SKILLS
         </span>
-        <img
+        {/* <img
           src={require('../../../assets/Ellipse 6.svg').default}
           alt='eclipse'
           className='skills_eclipse'
-        />
+        /> */}
       </h1>
       <div className='skills_marquee_container'>
         <Marquee>
