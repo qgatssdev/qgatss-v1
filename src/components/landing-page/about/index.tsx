@@ -1,12 +1,14 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { onGreen, onTransparent } from 'animations/general';
+import Splitting from 'splitting';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import './styles.scss';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   const containerRef = useRef(null);
-  const textRef = useRef<HTMLParagraphElement>(null);
-  const lines = [];
 
   useEffect(() => {
     let ctx = gsap.context(() => {
@@ -25,23 +27,32 @@ const About = () => {
   }, []);
 
   useEffect(() => {
+    Splitting();
+
     let ctx = gsap.context(() => {
-      const tl = gsap.timeline();
-      const textElement = textRef.current;
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.about_text_container',
+          fastScrollEnd: true,
+          start: 'top bottom',
+          toggleActions: 'restart none none reverse',
+          once: true,
+        },
+      });
 
-      if (!textElement) return;
-      const paragraphs = textElement.querySelectorAll('p');
-
-      // paragraphs.forEach((paragraph) => {
-      //   const words = paragraph.textContent.split(' ');
-      //   words.forEach((word, index) => {
-      //     lines.push(`<span class="word">${word}</span>`);
-      //     if (index !== words.length - 1) {
-      //       lines.push('<span class="word">&nbsp;</span>');
-      //     }
-      //   });
-      //   lines.push('<br />');
-      // });
+      tl.fromTo(
+        '.word',
+        {
+          opacity: 0,
+          y: -100,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.05,
+          duration: 1,
+        }
+      );
     }, containerRef);
 
     return () => ctx.revert();
@@ -71,9 +82,9 @@ const About = () => {
         className='about_icon_outlined'
       />
       <div className='about_text_container'>
-        <p ref={textRef}>
+        <p className='word' data-splitting='lines'>
           Hey!👋 I'm Uche, and I'm on a mission to craft exceptional digital
-          experiences as a passionate software engineer with a over 2 years of
+          experiences as a passionate software engineer with a over 3 years of
           experience. My expertise revolves around taking design concepts and
           turning them into functional, user-friendly realities. Collaboration
           is at the heart of my process. I work closely with clients and

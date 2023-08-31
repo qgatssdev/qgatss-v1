@@ -7,20 +7,26 @@
 
   .quote_text {
     max-width: 1015px;
-    color: #151515;
-    font-family: JetBrains Mono;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
     margin: 0 auto;
     padding-top: 10%;
     position: relative;
     display: flex;
 
-    @media (max-width: 992px) {
-      font-size: 20px;
-      flex-direction: column;
-      gap: 20px;
+    p {
+      color: #151515;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+
+      span {
+        font-family: JetBrains Mono;
+      }
+
+      @media (max-width: 992px) {
+        font-size: 20px;
+        flex-direction: column;
+        gap: 20px;
+      }
     }
 
     .apostrophe {
