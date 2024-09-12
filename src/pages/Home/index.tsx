@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     split();
   });
-  
+
   return (
     <>
       <div className='home_container'>

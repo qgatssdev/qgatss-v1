@@ -13,6 +13,7 @@ const Projects = () => {
       tools: ['Next.js', 'Typescript'],
     },
   ];
+
   return (
     <div className='project_container'>
       <p>SELECTED PROJECTS</p>

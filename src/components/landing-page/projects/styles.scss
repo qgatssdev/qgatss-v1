@@ -24,17 +24,20 @@
 
   button {
     width: 224px;
-    height: 80px;
+    height: 50px;
     background: #fff;
     display: block;
     margin: 0 auto;
     cursor: pointer;
     border: none;
     transition: 0.5s;
+    border-radius: 10px;
+    transform: rotate(0deg);
 
     &:hover {
       background: #ccf381;
       border-radius: 10px;
+      transform: rotate(20deg);
     }
   }
 }

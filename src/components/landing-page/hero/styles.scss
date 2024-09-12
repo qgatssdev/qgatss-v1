@@ -42,6 +42,7 @@
         font-size: 100px;
         color: #ccf381;
         font-family: 'Coolvetica';
+        cursor: pointer;
 
         @media (min-width: 600px) and (max-width: 768px) {
           font-size: 150px;
@@ -151,6 +152,7 @@
         -webkit-text-fill-color: transparent;
         width: fit-content;
         padding: 0;
+        cursor: pointer;
 
         @media (min-width: 600px) and (max-width: 768px) {
           font-size: 150px;

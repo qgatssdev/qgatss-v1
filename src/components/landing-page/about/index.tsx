@@ -92,13 +92,14 @@ const About = () => {
           It's not just about code, it's about creating a lasting impact through
           intuitive interfaces that users love. <br /> <br />
           When I step away from the screen, you'll often find me immersed in
-          music or hitting the gym. The rhythm of coding matches the rhythm of
-          my favorite tunes, and just as I sculpt code, I also sculpt myself
-          through dedicated workouts. I'm a firm believer that creativity and
-          technology are an unbeatable combination. Through thoughtful coding
-          and innovative design, I'm on a journey to create seamless digital
-          experiences that resonate. So, if you're ready to transform your ideas
-          into remarkable realities, let's connect and make it happen.
+          music, hitting the gym or playing tennis. The rhythm of coding matches
+          the rhythm of my favorite tunes, and just as I sculpt code, I also
+          sculpt myself through dedicated workouts. I'm a firm believer that
+          creativity and technology are an unbeatable combination. Through
+          thoughtful coding and innovative design, I'm on a journey to create
+          seamless digital experiences that resonate. So, if you're ready to
+          transform your ideas into remarkable realities, let's connect and make
+          it happen.
         </p>
       </div>
     </div>
